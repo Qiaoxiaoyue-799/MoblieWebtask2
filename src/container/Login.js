@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 
 export default class Login extends Component {
     home=(e)=>{
-        window.location.href="http://localhost:3000/home/all/1";
+        window.location.href="https://qiaoxiaoyue-799.github.io/home/all/1";
     }
     render() {
         return (

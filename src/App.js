@@ -11,7 +11,7 @@ import Content from './container/subContainer/Content';
 export default class App extends Component {
     render() {
         return (
-            <Router>
+            <Router basename="/MoblieWebtask2/build">
                 <div>
                     <Header/>
                 </div>
