@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Header from './components/Header';
-import {BrowserRouter as Router,Route,Link} from 'react-router-dom';
+import {BrowserRouter as Router,Route,Link,Redirect} from 'react-router-dom';
 import Home from './container/Home';
 import Start from './container/Start';
 import Api from './container/Api';
@@ -11,13 +11,14 @@ import Content from './container/subContainer/Content';
 export default class App extends Component {
     render() {
         return (
-            <Router basename="/MoblieWebtask2/build">
+            <Router basename="/MoblieWebtask2/build/">
                 <div>
                     <Header/>
                 </div>
                 <div>
                     <div className='content'>
                         <div>
+                            <Redirect to="/home/all/1"/>
                             <Route path='/home' component={Home}/>
                             <Route path='/start' component={Start}/>
                             <Route path='/api' component={Api}/>
