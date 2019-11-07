@@ -19,9 +19,8 @@ export default class Login extends Component {
                             <input type="text"></input>
                             <p>密码：</p>
                             <input type="text"></input>
-                            <Link to='/home'>
-                                <button>登录</button>
-                            </Link>
+                            <button onClick={()=>{this.props.history.push('/home')}}>登录</button>
+                            
                         </div>
                     </div>
                     
