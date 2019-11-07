@@ -18,7 +18,7 @@ export default class App extends Component {
                 <div>
                     <div className='content'>
                         <div>
-                            <Redirect to="/home/all/1"/>
+                            <Route exact path="/" render={() => (<Redirect from='/' to="/home/all/1"/>)}/>
                             <Route path='/home' component={Home}/>
                             <Route path='/start' component={Start}/>
                             <Route path='/api' component={Api}/>
